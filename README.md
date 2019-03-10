@@ -25,7 +25,7 @@ Create an account in Plotly. Get the access tokens and username.
 
 Change the following lines in the files dashboard/analysis.py and dashboard/prediction.py
 
-> plotly.tools.set_credentials_file(username='<your-plotly-username-here>', api_key='<your-plotly-api-key-here>')
+> plotly.tools.set_credentials_file(username='your-plotly-username-here', api_key='your-plotly-api-key-here')
 
 
 ```bash
