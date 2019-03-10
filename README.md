@@ -1,6 +1,6 @@
-# Dasboard for MSMEs
+# Dashboard for MSMEs
 
-It is a project made on the fulfullment for Smart India Hackathon 2019. It helps the small companies to analyse and get a look over how their products are performing in the market. As well as it helps predict the future demands of the products.
+It is a project made on the fulfillment of Smart India Hackathon 2019. It helps the small companies under MSME to analyse and get a look over how their products are performing in the market. As well as it helps predict the future demands of the products.
 
 ## Setup:
 ```bash
@@ -14,9 +14,6 @@ source venv/bin/activate
 
 # intall the dependencies
 pip install -r requirements.txt
-
-# run the server
-python manage.py runserver
 ```
 
 #### Setup to use plotly:
@@ -27,6 +24,7 @@ Change the following lines in the files dashboard/analysis.py and dashboard/pred
 
 > plotly.tools.set_credentials_file(username='your-plotly-username-here', api_key='your-plotly-api-key-here')
 
+### Access the application
 
 ```bash
 # run the server
