@@ -1,0 +1,69 @@
+{% extends "dashboard/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h5 class="card-title text-center">Profit/Loss Analysis</h5>
+    <div class="container mt--8 pb-5">
+        <form action="{% url 'dash-analyse-PL' %}" method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <!-- <legend class="border-bottom mb-4">Log In:</legend> -->
+                {{ form_5|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+<h5 class="card-title text-center">Analysis</h5>
+    <div class="container mt--8 pb-5">
+        <form action="{% url 'dash-analyse' %}" method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <!-- <legend class="border-bottom mb-4">Log In:</legend> -->
+                {{ form_4|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+<h5 class="card-title text-center">Seasonal Analysis</h5>
+    <div class="container mt--8 pb-5">
+        <form action="{% url 'dash-analyse-seasonal' %}" method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <!-- <legend class="border-bottom mb-4">Log In:</legend> -->
+                {{ form_2|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+<h5 class="card-title text-center">Place-wise Analysis</h5>
+<div class="container mt--8 pb-5">
+    <form action="{% url 'dash-analyse-place' %}" method="post">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <!-- <legend class="border-bottom mb-4">Log In:</legend> -->
+            {{ form_3|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-secondary" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<h5 class="card-title text-center">Prediction</h5>
+<div class="container mt--8 pb-5">
+    <form action="{% url 'dash-predict' %}" method="post">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <!-- <legend class="border-bottom mb-4">Log In:</legend> -->
+            {{ form_1|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-secondary" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

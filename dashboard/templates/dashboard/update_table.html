@@ -1,0 +1,37 @@
+{% extends "dashboard/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container border border-secondary">
+<h5 class="card-title text-center">Update Table using CSV</h5>
+    <div class="container mt--8 pb-5">
+        <form action="{% url 'dash-home' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <!-- <legend class="border-bottom mb-4">Log In:</legend> -->
+                {{ form2|crispy }}
+                {{ form1|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary" type="submit">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<br>
+<div class="container border border-secondary" id="box">
+<h5 class="card-title text-center">Update Table</h5>
+    <div class="container mt--8 pb-5">
+        <form action="" method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <!-- <legend class="border-bottom mb-4">Log In:</legend> -->
+                {{ form3|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-secondary" type="submit">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

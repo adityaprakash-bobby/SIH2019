@@ -1,0 +1,9 @@
+{% extends "dashboard/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% endblock content %}
+
+{% block prediction %}
+<h5>{{ head }} for Product {{ product }} for the next {{ days }} days</h5>
+<div class="col-md-12">{{plot_div_AR|safe}}</div>
+{% endblock %}
