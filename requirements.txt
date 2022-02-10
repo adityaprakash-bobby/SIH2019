@@ -8,7 +8,7 @@ dash-html-components==0.13.5
 dash-renderer==0.18.0
 dash-table==3.4.0
 decorator==4.3.2
-Django==2.2.24
+Django==2.2.27
 django-crispy-forms==1.7.2
 django-graphos==0.3.41
 Flask==1.0.2
