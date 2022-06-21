@@ -24,7 +24,7 @@ lxml==4.6.3
 MarkupSafe==1.1.0
 matplotlib==3.0.2
 nbformat==4.4.0
-numpy==1.16.1
+numpy==1.22.0
 pandas==0.24.1
 pandas-datareader==0.7.0
 patsy==0.5.1
